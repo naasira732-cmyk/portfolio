@@ -1,4 +1,5 @@
-import '../index.css'
+import "../index.css";
+
 import {
   FaWhatsapp,
   FaGithub,
@@ -31,49 +32,31 @@ const Contact = () => {
             <div className="space-y-5">
               <div>
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-gray-400">
-                  Naasira732@gmail.com
-                </p>
+                <p className="text-gray-400">Naasira732@gmail.com</p>
               </div>
 
               <div>
                 <h3 className="font-semibold">Phone</h3>
-                <p className="text-gray-400">
-                  +252 77 127 0548
-                </p>
+                <p className="text-gray-400">+252 77 127 0548</p>
               </div>
 
               <div>
                 <h3 className="font-semibold">Location</h3>
-                <p className="text-gray-400">
-                  Mogadishu, Somalia
-                </p>
+                <p className="text-gray-400">Mogadishu, Somalia</p>
               </div>
             </div>
 
             {/* SOCIAL ICONS */}
             <div className="flex gap-5 mt-8 text-3xl">
-              <a
-                href="https://wa.me/252771270548"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://wa.me/252771270548" target="_blank" rel="noreferrer">
                 <FaWhatsapp className="text-green-500 hover:scale-110 duration-300" />
               </a>
 
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://github.com/naasira732-cmyk" target="_blank" rel="noreferrer">
                 <FaGithub className="hover:text-cyan-400 duration-300" />
               </a>
 
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://linkedin.com/in/naasira732" target="_blank" rel="noreferrer">
                 <FaLinkedin className="text-blue-500 hover:scale-110 duration-300" />
               </a>
 
@@ -89,23 +72,19 @@ const Contact = () => {
             method="POST"
             className="bg-slate-900/60 backdrop-blur-md border border-cyan-400/20 rounded-2xl p-8"
           >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Portfolio Message"
-            />
+            <input type="hidden" name="_subject" value="New Portfolio Message" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
 
+            {/* ✅ SAXAN: Live website URL */}
             <input
               type="hidden"
-              name="_captcha"
-              value="false"
+              name="_next"
+              value="https://your-project-name.vercel.app"
             />
 
             <div className="mb-5">
-              <label className="block mb-2 text-gray-300">
-                Name
-              </label>
-
+              <label className="block mb-2 text-gray-300">Name</label>
               <input
                 type="text"
                 name="name"
@@ -116,10 +95,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-5">
-              <label className="block mb-2 text-gray-300">
-                Email
-              </label>
-
+              <label className="block mb-2 text-gray-300">Email</label>
               <input
                 type="email"
                 name="email"
@@ -130,10 +106,7 @@ const Contact = () => {
             </div>
 
             <div className="mb-5">
-              <label className="block mb-2 text-gray-300">
-                Message
-              </label>
-
+              <label className="block mb-2 text-gray-300">Message</label>
               <textarea
                 rows="5"
                 name="message"
